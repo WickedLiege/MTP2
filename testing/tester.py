@@ -58,7 +58,7 @@ class Tester():
             raise ValueError("No checkpoint found")
 
     def load_checkpoint(self, path):
-        state_dict = torch.load(path, map_location=self.device)
+        state_dict = torch.load(path, map_location=self.device, weights_only=False)
         try:
             self.it=state_dict['it']
         except:
