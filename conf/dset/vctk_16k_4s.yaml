@@ -1,0 +1,25 @@
+train:
+  _target_: datasets.vctk.VCTKTrain
+  segment_length: 65536
+  fs: 16000
+  path: /scratch/elec/t412-asp/audio_datasets/speech/VCTK/wav16
+  speakers_discard: ["p280", "p315"]
+  speakers_test: ["p351", "p360",]
+  normalize: False
+  #sigma_data: 0.05 #for normalization purposes
+ 
+  #random seed
+  seed: 0
+
+test:
+  _target_: datasets.vctk.VCTKTestPaired
+  segment_length: 65536
+  fs: 16000
+  path: /scratch/elec/t412-asp/audio_datasets/speech/VCTK/wav16
+  speakers_discard: ["p280", "p315"]
+  speakers_test: ["p226", "p287"]
+  normalize: False
+  num_examples: 16
+ 
+  #random seed
+  seed: 0
