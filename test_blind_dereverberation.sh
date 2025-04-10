@@ -3,8 +3,8 @@ export TORCH_USE_RTLD_GLOBAL=YES
 export HYDRA_FULL_ERROR=1
 export CUDA_LAUNCH_BLOCKING=1
 
-#ckpt=<pretrained-vctk-checkpoint.pt>
-ckpt=/home/molinee2/projects/audiodps/experiments/VCTK_16k/VCTK_16k_4s_time-190000.pt
+ckpt=experiments/VCTK_16k_4s_time-190000.pt
+# ckpt=/home/molinee2/projects/audiodps/experiments/VCTK_16k/VCTK_16k_4s_time-190000.pt
 
 tester=blind_dereverberation_BUDDy
 conf=conf_VCTK.yaml

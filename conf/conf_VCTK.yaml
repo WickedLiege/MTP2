@@ -1,4 +1,5 @@
 defaults:
+  - _self_
   - dset: vctk_16k_4s
   - network: ncsnpp
   - diff_params: edm_VCTK
